@@ -15,6 +15,7 @@ public class ServiceTwoResource {
     @Produces(MediaType.TEXT_PLAIN)
     public String handleServiceTwo(@PathParam("value") String value) {
         Log.debug("Value = " + value);
+        Thread.sleep(10000);
         return value;
     }
 }
