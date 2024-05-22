@@ -13,7 +13,7 @@ public class ServiceTwoResource {
     @GET
     @Path("handle/{value}")
     @Produces(MediaType.TEXT_PLAIN)
-    public String handleServiceTwo(@PathParam("value") String value) {
+    public String handleServiceTwo(@PathParam("value") String value) throws Exception {
         Log.debug("Value = " + value);
         Thread.sleep(10000);
         return value;
