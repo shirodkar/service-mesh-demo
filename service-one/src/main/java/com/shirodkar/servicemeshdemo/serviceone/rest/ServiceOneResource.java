@@ -11,7 +11,7 @@ public class ServiceOneResource {
     private final RestClient restClient;
 
     public ServiceOneResource(RestClient.Builder restClientBuilder) {
-		this.restClient = restClientBuilder.baseUrl("http://service-two:8080").build();
+		  this.restClient = restClientBuilder.baseUrl("http://service-two:8080").build();
     }
 
     @GetMapping("/handle/{value}")
